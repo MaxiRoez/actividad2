@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="author" content="Maximiliano Romero">
+    <meta name="description" content="Esta es la actividad dos">
+    <meta name="keywords" content="tutorial, desarrollo web, Alumno">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario Maximiliano Romero</h1>
+    <h3>datos personales</h3>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="documento">Documento</label>
+        <select name="documento" id="documento" size="tamaño">
+            <option value="Dni">DNI</option>
+            <option value="Cedula">Cedula</option>
+            <option value="DU">Documento Unico</option>
+            <option value="LC">Libreta Civica</option>
+        </select>
+        <input type="text" name="documento" id="documento" size="tamaño" placeholder="escribe tu numero de documento">
+        <br>
+        <br>
+        <label for="genero"></label>
+        <input type="radio" name="genero" id="genero" value="Hombre"> Hombre
+        <input type="radio" name="genero" id="genero" value="Mujer"> Mujer
+        <input type="radio" name="genero" id="genero" value="otro"> otro
+        <br>
+        <br>
+        <label for="Usuario">Apellido y Nombre:</label>
+        <input type="text" name="Usuario" id="Usuario" size="tamaño" placeholder="Apellido">
+        <input type="text" name="Usuario" id="Usuario" size="tamaño" placeholder="Nombre">
+        <br>
+        <br>
+        <label for="Nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="Nacimiento" name="Nacimiento" max="2023-12-12">
+        <br>
+        <br>
+        <label for="domicilio">Domicilio</label>
+        <input type="text" id="domicilio" name="domicilio" size="tamaño" placeholder="Escribe tu domicilio">
+        <label>Codigo Postal</label>
+        <input type="text" id="domicilio" name="domicilio" size="tamaño" placeholder="Escribe el codigo Postal" maxlength="2" minlength="4">
+        <br>
+        <br>
+        <label for="Pais">Pais</label>
+        <select id="Pais" name="Pais">
+            <option value="Elige un pais">Elige un pais</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+        <label for="Provincia">Provincia</label>
+        <select id="Provincia" name="Provincia">
+            <option value="Elige una provincia">Elige una provincia</option>
+            <option value="Corrientes">Corrientes</option>
+        </select>
+        <br>
+        <br>
+        <label for="Departamento">Departamento</label>
+        <select id="departamento" name="departamento">
+            <option value="Elige un departamento">Elige un departamento</option>
+            <option value="Paso de los Libres">Paso de los Libres</option>
+        </select>
+        <label for="Localidad">Localidad</label>
+        <select id="Localidad" name="Localidad">
+            <option value="Elige una localidad">Elige una localidad</option>
+            <option value="Paso de los Libres">Paso de los Libres</option>
+        </select>
+        <br>
+        <br>
+        <label for="Correo">Correo Electronico</label>
+        <input type="text" id="Correo" name="Correo" size="tamaño" placeholder="Escribe tu correo electronico">
+        <br>
+        <br>
+        <label for="telefono">Numero de Telefono</label>
+        <input type="text" id="telefono" name="telefono" size="tamaño" placeholder="Numero de telefono">
+        <br>
+        <br>
+        <label for="presentacion">Cuentanos un poco sobre ti</label>
+        <br>
+        <textarea type="file" id="presentacion" size="tamaño" name="presentacion" placeholder="escribe un poco sobre ti" rows="10" cols="50"></textarea>
+        <br>
+        <input type="reset" value="restablecer tus datos">
+        <input type="submit" value="enviar tus datos">
+    </form>
+
+</body>
